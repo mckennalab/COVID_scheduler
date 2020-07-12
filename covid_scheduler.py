@@ -74,7 +74,7 @@ def main():
             created_event = service.events().insert(calendarId=calendarAPI, body=event).execute()
             event = create_event("BAY1","FE",month,day,True)
             created_event = service.events().insert(calendarId=calendarAPI, body=event).execute()
-            event = create_event("BAY1","RF",month,day,False)
+            event = create_event("BAY1","RS",month,day,False)
             created_event = service.events().insert(calendarId=calendarAPI, body=event).execute()
         if day % 3 == 1:
             event = create_event("BAY2","MF",month,day,True)
